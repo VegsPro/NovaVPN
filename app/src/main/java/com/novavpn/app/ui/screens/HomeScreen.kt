@@ -139,7 +139,7 @@ fun HomeScreen(vm: MainViewModel) {
             horizontalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             QuickChip("Авто-обновление", vm.autoUpdateOnLaunch) {
-                vm.setAutoUpdateOnLaunch(!vm.autoUpdateOnLaunch)
+                vm.updateAutoUpdateOnLaunch(!vm.autoUpdateOnLaunch)
             }
             QuickChip("Избранные", vm.showOnlyFavorites) {
                 vm.toggleFavoritesFilter()

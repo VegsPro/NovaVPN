@@ -46,7 +46,7 @@ fun AppsScreen(vm: MainViewModel) {
                     }
                     Switch(
                         checked = vm.globalProxyMode,
-                        onCheckedChange = { vm.setGlobalProxyMode(it) },
+                        onCheckedChange = { vm.updateGlobalProxyMode(it) },
                         colors = SwitchDefaults.colors(
                             checkedThumbColor = NovaAccent,
                             checkedTrackColor = NovaAccent.copy(alpha = 0.35f)
@@ -74,7 +74,7 @@ fun AppsScreen(vm: MainViewModel) {
                         }
                         Switch(
                             checked = vm.invertAppProxy,
-                            onCheckedChange = { vm.setInvertAppProxy(it) },
+                            onCheckedChange = { vm.updateInvertAppProxy(it) },
                             colors = SwitchDefaults.colors(
                                 checkedThumbColor = NovaPrimary,
                                 checkedTrackColor = NovaPrimary.copy(alpha = 0.35f)

@@ -214,15 +214,15 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    fun setGlobalProxyMode(enabled: Boolean) {
+    fun updateGlobalProxyMode(enabled: Boolean) {
         globalProxyMode = enabled
     }
 
-    fun setInvertAppProxy(invert: Boolean) {
+    fun updateInvertAppProxy(invert: Boolean) {
         invertAppProxy = invert
     }
 
-    fun setAutoUpdateOnLaunch(enabled: Boolean) {
+    fun updateAutoUpdateOnLaunch(enabled: Boolean) {
         autoUpdateOnLaunch = enabled
     }
 

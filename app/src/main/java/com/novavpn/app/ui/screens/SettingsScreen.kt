@@ -33,7 +33,7 @@ fun SettingsScreen(vm: MainViewModel) {
                 title = "Автообновление подписок",
                 subtitle = "При каждом запуске приложения",
                 checked = vm.autoUpdateOnLaunch,
-                onCheckedChange = { vm.setAutoUpdateOnLaunch(it) }
+                onCheckedChange = { vm.updateAutoUpdateOnLaunch(it) }
             )
         }
 
